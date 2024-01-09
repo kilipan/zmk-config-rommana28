@@ -1,0 +1,16 @@
+if SHIELD_ROMMANA28_LEFT
+
+    config ZMK_KEYBOARD_NAME
+        default "rommana28"
+
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+
+endif # LEFT
+
+if SHIELD_ROMMANA28_LEFT || SHIELD_ROMMANA28_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif # LEFT RIGHT

@@ -1,0 +1,5 @@
+config SHIELD_ROMMANA28_LEFT
+    def_bool $(shields_list_contains,rommana28_left)
+
+config SHIELD_ROMMANA28_RIGHT
+    def_bool $(shields_list_contains,rommana28_right)

@@ -1,0 +1,13 @@
+file_format: "1"
+id: rommana28
+name: rommana28
+type: shield
+url: https://github.com/AlaaSaadAbdo/Rommana
+requires:
+  - seeeduino_xiao_ble
+  - seeeduino_xiao_rp2040
+features:
+  - keys
+siblings:
+  - rommana28_left
+  - rommana28_right
