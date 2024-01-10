@@ -17,9 +17,9 @@ include:
     shield: rommana28_left
   - board: seeeduino_xiao_ble
     shield: rommana28_right
-  - board: seeeduino_xiao_rp2040
-    shield: rommana28_left
-  - board: seeeduino_xiao_rp2040
-    shield: rommana28_right
+#  - board: seeeduino_xiao_rp2040
+#    shield: rommana28_left
+#  - board: seeeduino_xiao_rp2040
+#    shield: rommana28_right
 #  - board: seeeduino_xiao_ble
 #    shield: settings_reset
