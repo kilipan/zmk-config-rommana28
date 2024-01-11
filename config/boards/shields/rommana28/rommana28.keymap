@@ -55,7 +55,6 @@ combo_##NAME { \
         COMBO(sch, &macro_sch, 0 2)
         COMBO(slash, &kp SLASH, 22 23)
         COMBO(dash, &kp MINUS, 21 22)
-//        COMBO(enter, &kp ENTER, 21 22 23)
         COMBO(enter, &kp ENTER, 21 23)
         COMBO(esc, &kp ESC, 19 20)
 /* parentheticals */
@@ -196,7 +195,7 @@ combo_##NAME { \
                                &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
                                &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
-                                                             &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN ENTER
+                                                             &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN TAB
             >;
         };
         numbers {
@@ -213,8 +212,8 @@ combo_##NAME { \
             label = "NAV";
 
             bindings = <
-                               &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+                               &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_UP   &kp LC(LEFT)   &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)
+                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_VOL_DN   &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
                                &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END
                                                              &trans          &trans         &trans         &trans
             >;
@@ -223,7 +222,7 @@ combo_##NAME { \
             label = "SYM";
 
             bindings = <
-                               &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC       &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT
+                               &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC       &kp RBRC       &kp BACKSLASH  &kp PIPE       &none
                 &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &kp LPAR       &kp RPAR       &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
                                &kp TILDE      &kp SQT        &kp UNDERSCORE                                 &kp MINUS      &kp PLUS       &kp EQUAL
                                                              &kp LBKT         &kp RBKT       &trans         &trans
