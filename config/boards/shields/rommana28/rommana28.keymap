@@ -239,7 +239,7 @@ combo_##NAME { \
         naught {
             label = "NGT";
             bindings = <
-                               &kp F          &kp L          &kp K          &kp B          &kp P            &kp G          &kp O          &kp U
+                               &kp F          &kp L          &kp K          &kp Z          &kp P            &kp G          &kp O          &kp U
                 &hl LCTRL N    &hl LALT S     &hl LGUI H     &hl LSHFT T    &hl RALT M     &hr RALT Y       &hr RSHFT C    &hr RGUI A     &hr LALT I     &hr RCTRL E
                                &kp B          &kp T          &kp D                                          &kp W          &kp SQT        &comsem
                                                              &my_lt NUM TAB &my_lt NAV R   &my_lt SYM SPACE &sposs_lt FUN 0
