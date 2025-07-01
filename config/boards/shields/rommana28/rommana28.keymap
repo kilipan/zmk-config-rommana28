@@ -30,6 +30,15 @@
 		    &macro_tap &kp C &kp H
 	    >;
         };
+        macro_space_oss: macro_space_oss {
+            label = "Macro_Space_OSS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+		    &macro_tap &kp SPACE
+		    &macro_tap &sk LSFT
+	    >;
+        };
     };
 };
 
@@ -162,14 +171,22 @@ combo_##NAME { \
     keymap {
         compatible = "zmk,keymap";
 
-        aptmak {
-            label = "APT";
-
+        // aptmak {
+        //     label = "APT";
+        //     bindings = <
+        //                        &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
+        //         &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
+        //                        &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
+        //                                                      &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN TAB
+        //     >;
+        // };
+        naught {
+            label = "NGT";
             bindings = <
-                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
-                                                             &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN TAB
+                               &kp F          &kp L          &kp K          &kp B          &kp P            &kp G          &kp O          &kp U
+                &hl LCTRL N    &hl LALT S     &hl LGUI H     &hl LSHFT T    &hl RALT M     &hr RALT Y       &hr RSHFT C    &hr RGUI A     &hr LALT I     &hr RCTRL E
+                               &kp B          &kp T          &kp D                                          &kp W          &kp SQT        &comsem
+                                                             &my_lt NUM TAB &my_lt NAV R   &my_lt SYM SPACE &my_lt FUN &macro_space_oss
             >;
         };
         numbers {
