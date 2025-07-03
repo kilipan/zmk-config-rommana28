@@ -150,7 +150,7 @@ combo_##NAME { \
         COMBO(delword, &kp LC(BSPC), 5 7)
 /* alternative shifting */
         COMBO(Scomma, &kp COLON, 22 27)
-        COMBO(Sdot, &dotcol, 23 27)
+        COMBO(Sdot, &kp SEMI, 23 27)
     };
 };
 
@@ -260,8 +260,8 @@ combo_##NAME { \
             bindings = <
                                &kp F          &kp L          &kp K          &kp Z          &kp P            &kp G          &kp O          &kp U
                 &hl LCTRL N    &hl LALT S     &hl LGUI H     &hl LSHFT T    &hl RALT M     &hr RALT Y       &hr RSHFT C    &hr RGUI A     &hr LALT E     &hr RCTRL I
-                               &kp V          &kp J          &kp D                                          &kp W          &kp SQT        &comsem
-                                                             &my_lt NUM TAB &my_lt NAV R   &my_lt SYM SPACE &sposs_lt FUN 0
+                               &kp V          &kp J          &kp D                                          &kp W          &dotcol        &comsem
+                                                             &my_lt NUM TAB &my_lt NAV R   &my_lt SYM SPACE &my_lt FUN SQT
             >;
         };
         numbers {
