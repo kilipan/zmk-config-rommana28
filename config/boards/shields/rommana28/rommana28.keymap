@@ -121,7 +121,7 @@ combo_##NAME { \
      //   COMBO(_ae, &kp RA(A), 15 26)
      //   COMBO(_oe, &kp RA(O), 17 26)
      //   COMBO(_ue, &kp RA(U), 6 26)
-        COMBO(_ae, &macro_de_ae, 15 26)
+        COMBO(_ae, &macro_de_ae, 17 26)
         COMBO(_oe, &macro_de_oe, 6 26)
         COMBO(_ue, &macro_de_ue, 7 26)
         COMBO(_sz, &macro_de_sz, 9 25)
@@ -259,7 +259,7 @@ combo_##NAME { \
             label = "NGT";
             bindings = <
                                &kp F          &kp L          &kp K          &kp Z          &kp P            &kp G          &kp O          &kp U
-                &hl LCTRL N    &hl LALT S     &hl LGUI H     &hl LSHFT T    &hl RALT M     &hr RALT Y       &hr RSHFT C    &hr RGUI A     &hr LALT E     &hr RCTRL I
+                &hl LCTRL N    &hl LALT S     &hl LGUI H     &hl LSHFT T    &hl RALT M     &hr RALT Y       &hr RSHFT C    &hr RGUI E     &hr LALT I     &hr RCTRL A
                                &kp V          &kp J          &kp D                                          &kp W          &dotcol        &comsem
                                                              &my_lt NUM TAB &my_lt NAV R   &my_lt SYM SPACE &my_lt FUN SQT
             >;
