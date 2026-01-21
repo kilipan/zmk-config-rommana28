@@ -261,7 +261,7 @@ combo_##NAME { \
 
             bindings = <
                               &kp N9      &kp N8      &kp N7       &kp PLUS       &kp PLUS       &kp N4         &kp N5         &kp N6
-                &hl LCTRL DOT &hl LALT N6 &hl LGUI N5 &hl LSHFT N4 &kp N0         &kp MINS       &kp N1         &kp N2         &kp N3         &kp DOT
+                &hl LCTRL DOT &hl LALT N6 &hl LGUI N5 &hl LSHFT N4 &kp N0         &kp MINUS      &kp N1         &kp N2         &kp N3         &kp DOT
                               &kp N3      &kp N2      &kp N1                                     &kp N7         &kp N8         &kp N9
                                                       &trans       &trans         &trans         &kp N0
             >;
