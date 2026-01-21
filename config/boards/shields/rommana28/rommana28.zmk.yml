@@ -4,8 +4,8 @@ name: rommana28
 type: shield
 url: https://github.com/AlaaSaadAbdo/Rommana
 requires:
-  - seeeduino_xiao_ble
-  - seeeduino_xiao_rp2040
+  - xiao_ble
+  - xiao_rp2040
 features:
   - keys
 siblings:
