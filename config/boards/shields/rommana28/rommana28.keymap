@@ -112,6 +112,7 @@ combo_##NAME { \
 / {
     combos {
         compatible = "zmk,combos";
+
 /* usually on base layer */
         COMBO(q, &kp Q, 0 1)
      //   COMBO(z, &kp Z, 18 19)
@@ -248,7 +249,6 @@ combo_##NAME { \
         compatible = "zmk,keymap";
 
         alphas {
-            label = "ALF";
             bindings = <
                                &kp L          &kp D          &kp Z          &kp K          &kp P            &kp W          &kp O          &kp U
                 &hl LCTRL N    &hl LALT R     &hl LGUI T     &hl LSHFT H    &hl RALT F     &hr RALT Y       &hr RSHFT C    &hr RGUI E     &hr LALT I     &hr RCTRL A
@@ -257,8 +257,6 @@ combo_##NAME { \
             >;
         };
         numbers {
-            label = "NUM";
-
             bindings = <
                               &kp N9      &kp N8      &kp N7       &kp PLUS       &kp PLUS       &kp N4         &kp N5         &kp N6
                 &hl LCTRL DOT &hl LALT N6 &hl LGUI N5 &hl LSHFT N4 &kp N0         &kp MINUS      &kp N1         &kp N2         &kp N3         &kp DOT
@@ -267,8 +265,6 @@ combo_##NAME { \
             >;
         };
         navigation {
-            label = "NAV";
-
             bindings = <
                                &none          &none          &none           &kp PG_UP      &kp LC(X)      &kp LC(INSERT) &kp LS(INSERT) &kp INSERT
                 &sk LCTRL      &sk LALT       &sk LGUI       &sk LSHFT       &kp PG_DN      &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT  &none
@@ -277,8 +273,6 @@ combo_##NAME { \
             >;
         };
         symbols {
-            label = "SYM";
-
             bindings = <
                                &none          &none          &none            &none          &none          &none          &none          &none
                 &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &none          &none          &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
@@ -287,8 +281,6 @@ combo_##NAME { \
             >;
         };
         function {
-            label = "FUN";
-
             bindings = <
                                &bootloader    &trans         &bt BT_CLR_ALL &bt BT_PRV     &kp F12        &kp F7         &kp F8         &kp F9
                 &bootloader    &kp F12        &kp F11        &kp F10        &bt BT_NXT     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
